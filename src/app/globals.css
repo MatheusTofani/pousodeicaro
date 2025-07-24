@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+body {
+    background-color: #FDFBFE;
+    font-family: var(--font-montserrat), sans-serif;
+}
+
+
+@keyframes slideMobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .animate-slideMobile {
+    animation: slideMobile 10s linear infinite;
+  }
+}
