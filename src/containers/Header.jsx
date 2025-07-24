@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Container from "@/components/Container";
 import { Menu, X } from "lucide-react";
+import Logo from "@/components/Logo";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -33,13 +34,7 @@ const Header = () => {
       }`}
     >
       <Container className="flex items-center justify-between h-[80px] transition-all p-5 md:p-0">
-        <h1
-          className={`text-2xl font-bold transition-colors duration-300 ${
-            scrolled ? "text-black" : "text-white"
-          }`}
-        >
-          Logo
-        </h1>
+       <Logo className={`h-[60px]`}/>
 
         {/* Menu Desktop */}
         <nav className="hidden md:block">

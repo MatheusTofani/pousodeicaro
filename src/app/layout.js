@@ -7,8 +7,11 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Pousada Vale Verde",
+  title: "Pouso de Icaro",
   description: "Hospedagem na natureza com conforto e tranquilidade.",
+  icons: {
+    icon: "/logo.jpg",
+  },
 };
 
 export default function RootLayout({ children }) {
