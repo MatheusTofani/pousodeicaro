@@ -4,6 +4,7 @@ import { FaWifi } from "react-icons/fa";
 import { MdOutlinePool } from "react-icons/md";
 import { BiMedal } from "react-icons/bi";
 import "../app/globals.css";
+import { BiSolidCarGarage } from "react-icons/bi";
 
 const Diferenciais = () => {
   const features = [
@@ -12,8 +13,8 @@ const Diferenciais = () => {
       title: "CAFÉ DA MANHÃ",
     },
     {
-      icon: <FaWifi />,
-      title: "WI-FI GRÁTIS",
+      icon: <BiSolidCarGarage />,
+      title: "GARAGEM",
     },
     {
       icon: <BiMedal />,

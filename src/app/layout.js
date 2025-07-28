@@ -10,7 +10,7 @@ export const metadata = {
   title: "Pouso de Icaro",
   description: "Hospedagem na natureza com conforto e tranquilidade.",
   icons: {
-    icon: "/logo.jpg",
+    icon: "/logo.png",
   },
 };
 

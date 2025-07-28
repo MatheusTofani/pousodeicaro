@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "@/components/Container";
+import Title from "@/components/Title";
 import { useState } from "react";
 
 const Faq = () => {
@@ -13,6 +14,18 @@ const Faq = () => {
             question: "A pousada oferece café da manhã?",
             answer: "Sim, a pousada oferece café da manhã incluso na diária.",
         },
+        {
+            question: "Há estacionamento disponível?",
+            answer: "Sim, a pousada possui estacionamento gratuito para os hóspedes.",
+        },
+        {
+            question: "A pousada aceita animais de estimação?",
+            answer: "Sim, aceitamos animais de estimação sob consulta prévia.",
+        },
+        {
+            question: "Quais são as formas de pagamento aceitas?",
+            answer: "Aceitamos cartões de crédito, débito e pagamentos via PIX.",
+        },
     ];
 
     const [activeIndex, setActiveIndex] = useState(null);
@@ -22,31 +35,42 @@ const Faq = () => {
     };
 
     return (
-        <section className="py-[80px]">
+        <section className="py-[80px] p-5 md:p-[80px 0]">
             <Container>
-                <div className="space-y-4">
+                <Title variant="black" className="text-center mb-8">
+                    PERGUNTAS FREQUENTES
+                </Title>
+
+                <div className="space-y-4 mt-[50px]">
                     {questions.map((item, index) => {
                         const isOpen = activeIndex === index;
 
                         return (
                             <div
                                 key={index}
-                                className="bg-[#20281D] rounded-lg px-6 py-4 cursor-pointer text-white"
-                                onClick={() => toggleQuestion(index)}
+                                className="bg-[#20281D] rounded-lg"
                             >
-                                <div className="flex justify-between items-center">
-                                    <h3 className="text-lg font-medium">
+                                <button
+                                    type="button"
+                                    onClick={() => toggleQuestion(index)}
+                                    aria-expanded={isOpen}
+                                    className="w-full text-left px-6 py-4 cursor-pointer text-white flex justify-between items-center"
+                                >
+                                    <h3 className="text-base sm:text-lg md:text-xl font-medium">
                                         {item.question}
                                     </h3>
-                                    <span className="text-xl">{isOpen ? "−" : "+"}</span>
-                                </div>
+                                    <span className="text-xl">
+                                        {isOpen ? "−" : "+"}
+                                    </span>
+                                </button>
 
                                 <div
-                                    className={`overflow-hidden transition-all duration-300 ${
-                                        isOpen ? "max-h-40 mt-3" : "max-h-0"
-                                    }`}
+                                    className={`overflow-hidden transition-all duration-300 px-6 ${isOpen ? "max-h-40 pb-4" : "max-h-0"
+                                        }`}
                                 >
-                                    <p className="text-sm">{item.answer}</p>
+                                    <p className="text-sm sm:text-base text-white">
+                                        {item.answer}
+                                    </p>
                                 </div>
                             </div>
                         );

@@ -1,22 +1,24 @@
 import Container from "@/components/Container";
 import Logo from "@/components/Logo";
+import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import { IoMdMail, IoMdPin } from "react-icons/io";
 
 
 const Footer = () => {
 
     const adress = [
         {
-            icon: "Aaa",
-            name: "end",
+            icon: <IoMdPin className="text-[30px]" />,
+            name: "R. Waldemar Mathias, 169 - Parque Imperial, Paraty - RJ, 23970-000",
         },
         {
-            icon: "sss",
-            name: "tel"
+            icon: <BsFillTelephoneFill   />,
+            name: "+55 (24) 3038-0537"
         },
         {
-            icon: "ddd",
-            name: "mail"
+            icon: <IoMdMail />,
+            name: "junior@pousodeicaro.com"
         },
     ]
 
@@ -45,59 +47,70 @@ const Footer = () => {
 
     const redes = [
         {
-            icon: <FaWhatsapp className="text-[#F2F2F2] text-[20px]" />,
-            href: "end",
+            icon: <FaWhatsapp className=" text-[20px]" />,
+            href: "https://wa.me/552430380537",
+            label: "Converse pelo WhatsApp"
         },
         {
-            icon: <FaInstagram className="text-[#F2F2F2] text-[20px]" />,
-            href: "tel"
+            icon: <FaInstagram className=" text-[20px]" />,
+            href: "https://www.instagram.com/pousodeicaro/",
+            label: "Siga no Instagram"
         },
         {
-            icon: <FaFacebook className="text-[#F2F2F2] text-[20px]" />,
-            href: "mail"
+            icon: <FaFacebook className=" text-[20px]" />,
+            href: "mail",
+            label: "Curta no Facebook"
         },
     ]
 
     return (
-        <footer className="bg-[#899D82]  py-[50px]">
-            <Container className={'flex'}>
+       <footer className="bg-[#899D82] py-[50px]">
+    <Container className="flex flex-col md:flex-row">
+        {/* Logo Section - agora fica acima em mobile */}
+        <div className=" md:border-r-2 md:border-b-0 border-[#FDFBFE] w-full md:w-[200px] pb-5 md:pb-0 md:pr-5 md:mr-[100px] flex justify-center md:justify-start md:items-center mb-5 md:mb-0">
+            <Logo className="h-[80px] md:h-[100px]" />
+        </div>
 
-                <div className="border-r-2 border-[#F2F2F2] w-[200px] pr- mr-[100px] flex items-center">
-                    <Logo className={`h-[80px]`} />
+        {/* Content Sections - empilhadas em mobile */}
+        <div className="flex flex-col md:flex-row justify-between w-full gap-8 md:gap-0">
+            {/* Address Section */}
+            <div className="flex flex-col items-center md:items-start md:w-[400px] gap-4">
+                <h2 className="text-[#FDFBFE] text-[20px] font-bold mb-2">Pouso de Ícaro</h2>
+                {adress.map((ads, index) => (
+                    
+                    <p key={index} className="flex items-center gap-2 text-[#FDFBFE] text-[16px] text-center md:text-left">
+                        {ads.icon} 
+                        {ads.name}
+                        </p>
+                ))}
+            </div>
+
+            {/* Navigation Section */}
+            <div className="flex flex-col items-center"> 
+                <h2 className="text-[#FDFBFE] text-[20px] font-bold mb-2">Navegação</h2>
+                <ul className="flex flex-col gap-2 items-center">
+                    {navs.map((nav, index) => (
+                        <li key={index}>
+                            <a href={nav.href} className="text-[#FDFBFE] text-[16px] hover:underline">{nav.name}</a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            {/* Social Media Section */}
+            <div className="flex flex-col items-center">
+                <h2 className="text-[#FDFBFE] text-[20px] font-bold mb-2">Redes Sociais</h2>
+                <div className="flex gap-4">
+                    {redes.map((rede, index) => (
+                        <a key={index} href={rede.href}  aria-label={rede.label} target="_blank" rel="noopener noreferrer" className="hover:text-[#FDFBFE80] text-[#FDFBFE] transition-colors duration-300">
+                            {rede.icon}
+                        </a>
+                    ))}
                 </div>
-
-                <div className="flex justify-between w-full ">
-                    <div className="flex flex-col items-center">
-                        <h2 className="text-[#F2F2F2] text-[20px] font-bold">Pouso de Ícaro</h2>
-                        {adress.map((ads, index) => (
-                            <p key={index} className="text-[#F2F2F2] text-[16px]">{ads.name}</p>
-                        ))}
-                    </div>
-
-                    <div className="flex flex-col items-center justify-center"> 
-                        <h2 className="text-[#F2F2F2] text-[20px] font-bold ">Navegação</h2>
-                        <ul className="flex flex-col gap-2 items-center ">
-                            {navs.map((nav, index) => (
-                                <li key={index}>
-                                    <a href={nav.href} className="text-[#F2F2F2] text-[16px] hover:underline">{nav.name}</a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    <div className="flex flex-col items-center">
-                        <h2 className="text-[#F2F2F2] text-[20px] font-bold">Redes Sociais</h2>
-                        <div className="flex gap-4 mt-2">
-                            {redes.map((rede, index) => (
-                                <a key={index} href={rede.href} className="hover:text-[#F2F2F2] transition-colors duration-300">
-                                    {rede.icon}
-                                </a>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </Container>
-        </footer>
+            </div>
+        </div>
+    </Container>
+</footer>
     )
 }
 

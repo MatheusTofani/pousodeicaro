@@ -10,9 +10,10 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const Navs = [
-    { name: "Home", href: "/" },
-    { name: "Sobre", href: "/about" },
-    { name: "Serviços", href: "/services" },
+    { name: "Inicio", href: "/" },
+    { name: "Suites", href: "/about" },
+    { name: "Café", href: "/services" },
+    { name: "Localização", href: "/contact" },
     { name: "Contato", href: "/contact" },
   ];
 
@@ -29,12 +30,11 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300  ${
-        scrolled ? "bg-[#FDFBFE] shadow-md" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300  ${scrolled ? "bg-[#FDFBFE] shadow-md" : "bg-transparent"
+        }`}
     >
       <Container className="flex items-center justify-between h-[80px] transition-all p-5 md:p-0">
-       <Logo className={`h-[60px]`}/>
+        <Logo className={`h-[70px]`} />
 
         {/* Menu Desktop */}
         <nav className="hidden md:block">
@@ -43,26 +43,34 @@ const Header = () => {
               <li key={nav.name}>
                 <a
                   href={nav.href}
-                  className={`transition-colors duration-300 hover:underline ${
-                    scrolled ? "text-black" : "text-white"
-                  }`}
+                  className={`transition-colors duration-300 hover:underline ${scrolled ? "text-[#20281D]" : "text-[#FDFBFE]"
+                    }`}
                 >
                   {nav.name}
                 </a>
               </li>
             ))}
+            <li>
+              <a aria-label="Faça sua reserva agora"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://hotels.cloudbeds.com/pt-br/reservas/BF2NIc?currency=brl"
+                className={`inline-block  px-6 py-3 rounded-full font-medium  transition ${scrolled ? "text-[#FDFBFE] bg-[#899D82] hover:bg-[#809D82]" : " text-[#20281D] bg-[#FDFBFE] hover:bg-gray-200"
+                  } `}>
+                Reservar
+              </a>
+            </li>
           </ul>
         </nav>
 
         {/* Botão Hamburguer */}
         <button
-          className={`md:hidden z-50 transition-colors duration-300 ${
-            scrolled ? "text-black" : "text-white"
-          }`}
+          className={`md:hidden z-50 transition-colors duration-300 ${scrolled ? "text-black" : "text-white"
+            }`}
           onClick={toggleMenu}
           aria-label="Abrir menu"
         >
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          {menuOpen ? <X size={28} className="text-[#20281D]" /> : <Menu size={28} />}
         </button>
 
         {/* Menu Mobile */}
@@ -78,6 +86,13 @@ const Header = () => {
                 {nav.name}
               </a>
             ))}
+            <a aria-label="Faça sua reserva agora"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://hotels.cloudbeds.com/pt-br/reservas/BF2NIc?currency=brl" className={`inline-block  px-6 py-3 rounded-full font-medium  transition bg-[#899D82] hover:bg-[#809D82] text-[#FDFBFE] 
+                `}>
+              Reservar
+            </a>
           </nav>
         )}
       </Container>

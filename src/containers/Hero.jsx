@@ -16,7 +16,7 @@ const Hero = () => {
                 className="absolute w-full h-[90vh] object-cover z-[-2]"
                 aria-hidden="true"
             >
-                <source src="/hero.mp4" type="video/mp4" />
+                <source src="/Hero.mp4" type="video/webm" />
                 Seu navegador não suporta vídeos.
             </video>
 
@@ -29,14 +29,15 @@ const Hero = () => {
                     Pouso de Ícaro
                 </h1>
                 <p className="text-sm md:text-lg mb-6">
-                    A melhor localização de Paraty: a poucos passos do centro histórico,
-                    em um refúgio de silêncio e serenidade.
+                    Localizada perto do centro histórico de Paraty, a Pousada Pouso de Ícaro oferece um ambiente exclusivo, cercado pela natureza, ideal para quem busca conforto, silêncio e uma estadia inesquecível.
                 </p>
 
                 <a
-                    href="#contato"
+                    href="https://hotels.cloudbeds.com/pt-br/reservas/BF2NIc?currency=brl"
                     className="inline-block bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition"
-                    aria-label="Entre em contato conosco"
+                    aria-label="Faça sua reserva agora"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     Reservar agora
                 </a>
