@@ -4,10 +4,14 @@ import { useEffect, useState } from "react";
 import Container from "@/components/Container";
 import { Menu, X } from "lucide-react";
 import Logo from "@/components/Logo";
+import { usePathname } from "next/navigation"; // 👈 novo import
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname(); // 👈 detecta rota atual
+
+  const isHome = pathname === "/"; // 👈 estamos na página inicial?
 
   const Navs = [
     { name: "Inicio", href: "/" },
@@ -18,20 +22,26 @@ const Header = () => {
   ];
 
   useEffect(() => {
+    if (!isHome) {
+      setScrolled(true); // 👈 força o header a ter estilo fixo nas outras páginas
+      return;
+    }
+
     const onScroll = () => {
       setScrolled(window.scrollY > 100);
     };
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [isHome]);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300  ${scrolled ? "bg-[#FDFBFE] shadow-md" : "bg-transparent"
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? "bg-[#FDFBFE] shadow-md" : "bg-transparent"
+      }`}
     >
       <Container className="flex items-center justify-between h-[80px] transition-all p-5 md:p-0">
         <Logo className={`h-[70px]`} />
@@ -43,20 +53,26 @@ const Header = () => {
               <li key={nav.name}>
                 <a
                   href={nav.href}
-                  className={`transition-colors duration-300 hover:underline ${scrolled ? "text-[#20281D]" : "text-[#FDFBFE]"
-                    }`}
+                  className={`transition-colors duration-300 hover:underline ${
+                    scrolled ? "text-[#20281D]" : "text-[#FDFBFE]"
+                  }`}
                 >
                   {nav.name}
                 </a>
               </li>
             ))}
             <li>
-              <a aria-label="Faça sua reserva agora"
+              <a
+                aria-label="Faça sua reserva agora"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://hotels.cloudbeds.com/pt-br/reservas/BF2NIc?currency=brl"
-                className={`inline-block  px-6 py-3 rounded-full font-medium  transition ${scrolled ? "text-[#FDFBFE] bg-[#899D82] hover:bg-[#809D82]" : " text-[#20281D] bg-[#FDFBFE] hover:bg-gray-200"
-                  } `}>
+                className={`inline-block px-6 py-3 rounded-full font-medium transition ${
+                  scrolled
+                    ? "text-[#FDFBFE] bg-[#899D82] hover:bg-[#809D82]"
+                    : "text-[#20281D] bg-[#FDFBFE] hover:bg-gray-200"
+                }`}
+              >
                 Reservar
               </a>
             </li>
@@ -65,8 +81,9 @@ const Header = () => {
 
         {/* Botão Hamburguer */}
         <button
-          className={`md:hidden z-50 transition-colors duration-300 ${scrolled ? "text-black" : "text-white"
-            }`}
+          className={`md:hidden z-50 transition-colors duration-300 ${
+            scrolled ? "text-black" : "text-white"
+          }`}
           onClick={toggleMenu}
           aria-label="Abrir menu"
         >
@@ -86,11 +103,13 @@ const Header = () => {
                 {nav.name}
               </a>
             ))}
-            <a aria-label="Faça sua reserva agora"
+            <a
+              aria-label="Faça sua reserva agora"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://hotels.cloudbeds.com/pt-br/reservas/BF2NIc?currency=brl" className={`inline-block  px-6 py-3 rounded-full font-medium  transition bg-[#899D82] hover:bg-[#809D82] text-[#FDFBFE] 
-                `}>
+              href="https://hotels.cloudbeds.com/pt-br/reservas/BF2NIc?currency=brl"
+              className="inline-block px-6 py-3 rounded-full font-medium transition bg-[#899D82] hover:bg-[#809D82] text-[#FDFBFE]"
+            >
               Reservar
             </a>
           </nav>

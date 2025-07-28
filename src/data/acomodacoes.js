@@ -1,6 +1,7 @@
 const acomodacoes = [
   {
     name: "Suíte 1-A",
+    slug: "suite-1-a",
     description: "Uma suíte luxuosa com vista para o mar, ideal para casais em lua de mel.",
     price: 500,
     images: {
@@ -12,6 +13,7 @@ const acomodacoes = [
   },
   {
     name: "Suíte 1-B",
+    slug: "suite-1-b",
     description: "Uma suíte luxuosa com vista para o mar, ideal para casais em lua de mel.",
     price: 500,
     images: {
@@ -23,6 +25,7 @@ const acomodacoes = [
   },
   {
     name: "Suíte 2-A",
+    slug: "suite-2-a",
     description: "Uma suíte luxuosa com vista para o mar, ideal para casais em lua de mel.",
     price: 500,
     images: {
@@ -34,17 +37,21 @@ const acomodacoes = [
   },
   {
     name: "Suíte 2-B",
+    slug: "suite-2-b",
     description: "Uma suíte luxuosa com vista para o mar, ideal para casais em lua de mel.",
     price: 500,
     images: {
       image1: "/acomodacoes/suite-2-b/image1.jpg",
-      image2: "https://example.com/suite-luxo2.jpg",
-      image3: "https://example.com/suite-luxo3.jpg"
+      image2: "/acomodacoes/suite-2-b/image2.jpg",
+      image3: "/acomodacoes/suite-2-b/image3.jpg",
+      image4: "/acomodacoes/suite-2-b/image4.jpg",
+      image5: "/acomodacoes/suite-2-b/image5.jpg",
     },
     rating: 4.8,
   },
   {
     name: "Suíte 3",
+    slug: "suite-3",
     description: "Uma suíte luxuosa com vista para o mar, ideal para casais em lua de mel.",
     price: 500,
     images: {
@@ -56,6 +63,7 @@ const acomodacoes = [
   },
   {
     name: "Suíte 4",
+    slug: "suite-4",
     description: "Uma suíte luxuosa com vista para o mar, ideal para casais em lua de mel.",
     price: 500,
     images: {
@@ -67,6 +75,7 @@ const acomodacoes = [
   },
   {
     name: "Suíte 5",
+    slug: "suite-5",
     description: "Uma suíte luxuosa com vista para o mar, ideal para casais em lua de mel.",
     price: 500,
     images: {
@@ -78,6 +87,7 @@ const acomodacoes = [
   },
   {
     name: "Suíte 8",
+    slug: "suite-8",
     description: "Uma suíte luxuosa com vista para o mar, ideal para casais em lua de mel.",
     price: 500,
     images: {
@@ -89,6 +99,7 @@ const acomodacoes = [
   },
   {
     name: "Suíte 9",
+    slug: "suite-9",
     description: "Uma suíte luxuosa com vista para o mar, ideal para casais em lua de mel.",
     price: 500,
     images: {
@@ -100,6 +111,7 @@ const acomodacoes = [
   },
   {
     name: "Suíte 11-16",
+    slug: "suite-11-16",
     description: "Uma suíte luxuosa com vista para o mar, ideal para casais em lua de mel.",
     price: 500,
     images: {
@@ -109,6 +121,6 @@ const acomodacoes = [
     },
     rating: 4.8,
   },
-]
+];
 
 export default acomodacoes;
