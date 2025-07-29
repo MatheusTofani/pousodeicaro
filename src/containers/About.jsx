@@ -19,17 +19,27 @@ const About = () => {
             className="text-[#20281D] text-[24px] md:text-[34px] font-light leading-tight text-center md:text-left"
           >
             SOFISTICAÇÃO, ACONCHEGO, <br />
-            <span className="font-normal">NATUREZA E CHARME</span>
+            <strong className="font-normal">NATUREZA E CHARME</strong>
           </h2>
           <Line className="bg-[#899D82] mt-4" />
         </div>
 
         {/* Descrição */}
-        <div className="w-full md:w-[50%]">
-          <p className="text-[#20281D] text-[18px] md:text-[20px] leading-relaxed">
+        <div className="w-full md:w-[50%] text-[#20281D] text-[18px] md:text-[20px] leading-relaxed">
+          <p className="mb-4">
             A Pousada Pouso de Ícaro é uma pousada em Paraty que une conforto, sofisticação e atendimento de qualidade. Com localização privilegiada na praia de Paraty, oferecemos acomodações de luxo, serviços personalizados e uma experiência completa para quem busca tranquilidade e exclusividade.
+          </p>
 
-            Nosso objetivo é ser referência como hotel de alto padrão em Paraty, proporcionando uma estadia inesquecível em um ambiente paradisíaco. Ideal para casais, famílias ou viajantes que desejam relaxar e aproveitar o melhor do litoral com conforto e elegância.
+          
+          {/* Sugestão: link interno para página de reservas */}
+          <p className="mt-6 text-center md:text-left">
+            <a
+              href="/reservas"
+              className="inline-block bg-[#899D82] text-white px-6 py-3 rounded-full font-medium hover:bg-[#809D82] transition"
+              aria-label="Faça sua reserva agora"
+            >
+              Faça sua reserva agora
+            </a>
           </p>
         </div>
       </Container>

@@ -1,8 +1,9 @@
 "use client";
 
+import { useState, useCallback } from "react";
 import Container from "@/components/Container";
 import Title from "@/components/Title";
-import { useState } from "react";
+import FaqItem from "../components/FaqItem";
 
 const Faq = () => {
     const questions = [
@@ -30,9 +31,12 @@ const Faq = () => {
 
     const [activeIndex, setActiveIndex] = useState(null);
 
-    const toggleQuestion = (index) => {
-        setActiveIndex(activeIndex === index ? null : index);
-    };
+    const toggleQuestion = useCallback(
+        (index) => {
+            setActiveIndex((current) => (current === index ? null : index));
+        },
+        []
+    );
 
     return (
         <section className="py-[80px] p-5 md:p-[80px 0]">
@@ -42,39 +46,16 @@ const Faq = () => {
                 </Title>
 
                 <div className="space-y-4 mt-[50px]">
-                    {questions.map((item, index) => {
-                        const isOpen = activeIndex === index;
-
-                        return (
-                            <div
-                                key={index}
-                                className="bg-[#20281D] rounded-lg"
-                            >
-                                <button
-                                    type="button"
-                                    onClick={() => toggleQuestion(index)}
-                                    aria-expanded={isOpen}
-                                    className="w-full text-left px-6 py-4 cursor-pointer text-white flex justify-between items-center"
-                                >
-                                    <h3 className="text-base sm:text-lg md:text-xl font-medium">
-                                        {item.question}
-                                    </h3>
-                                    <span className="text-xl">
-                                        {isOpen ? "−" : "+"}
-                                    </span>
-                                </button>
-
-                                <div
-                                    className={`overflow-hidden transition-all duration-300 px-6 ${isOpen ? "max-h-40 pb-4" : "max-h-0"
-                                        }`}
-                                >
-                                    <p className="text-sm sm:text-base text-white">
-                                        {item.answer}
-                                    </p>
-                                </div>
-                            </div>
-                        );
-                    })}
+                    {questions.map((item, index) => (
+                        <FaqItem
+                            key={index}
+                            question={item.question}
+                            answer={item.answer}
+                            isOpen={activeIndex === index}
+                            onToggle={toggleQuestion}
+                            index={index}
+                        />
+                    ))}
                 </div>
             </Container>
         </section>

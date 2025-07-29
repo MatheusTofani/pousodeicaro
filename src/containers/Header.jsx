@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 import Container from "@/components/Container";
 import { Menu, X } from "lucide-react";
 import Logo from "@/components/Logo";
-import { usePathname } from "next/navigation"; // 👈 novo import
+import { usePathname } from "next/navigation"; 
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const pathname = usePathname(); // 👈 detecta rota atual
+  const pathname = usePathname(); 
 
-  const isHome = pathname === "/"; // 👈 estamos na página inicial?
+  const isHome = pathname === "/"; 
 
   const Navs = [
     { name: "Inicio", href: "/" },
@@ -23,7 +23,7 @@ const Header = () => {
 
   useEffect(() => {
     if (!isHome) {
-      setScrolled(true); // 👈 força o header a ter estilo fixo nas outras páginas
+      setScrolled(true); 
       return;
     }
 
