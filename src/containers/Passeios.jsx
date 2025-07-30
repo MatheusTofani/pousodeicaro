@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import CardItem from "@/components/Card";
+import Image from "next/image";
 
 const Passeios = () => {
     const settings = {
@@ -73,11 +74,13 @@ const Passeios = () => {
                 {/* Fundo com altura garantida */}
                 <div className="absolute top-0 left-0 w-full h-full z-[-2]">
                     <Parallax speed={-100}>
-                        <div className="w-full h-full">
-                            <img
+                        <div className="relative w-full h-[100vh]">
+                            <Image
                                 src="/guardachuva.jpg"
-                                alt=""
-                                className="w-full h-full object-cover"
+                                alt="Guarda-chuva"
+                                fill
+                                className="object-cover"
+                                priority
                             />
                         </div>
                     </Parallax>

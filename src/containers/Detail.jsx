@@ -38,11 +38,10 @@ export default function AcomodacaoDetalheView({ acomodacao }) {
                         {images.map((src, index) => (
                             <div
                                 key={index}
-                                className={`relative w-[80px] h-[60px] border-2 cursor-pointer rounded-md overflow-hidden transition-all ${
-                                    activeImage === src
+                                className={`relative w-[80px] h-[60px] border-2 cursor-pointer rounded-md overflow-hidden transition-all ${activeImage === src
                                         ? "border-[#899D82] border-3"
                                         : "border-transparent"
-                                }`}
+                                    }`}
                                 onClick={() => setActiveImage(src)}
                             >
                                 {isExternal(src) ? (

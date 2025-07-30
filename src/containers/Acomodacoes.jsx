@@ -1,11 +1,10 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import Image from "next/image";
 import Container from "@/components/Container";
 import Title from "@/components/Title";
 import acomodacoes from "@/data/acomodacoes";
-import Link from "next/link";
+
 
 // Estilos do react-slick
 import "slick-carousel/slick/slick.css";

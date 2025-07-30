@@ -28,20 +28,20 @@ const Footer = () => {
             name: "Termos",
         },
         {
-           href: "/",
+           href: "/cafe",
             name: "Café",
         },
         {
-           href: "/",
+           href: "/contato",
             name: "Contato",
         },
           {
-           href: "/",
-            name: "Suites",
+           href: "/acomodacoes",
+            name: "Acomodações",
         },
           {
-           href: "/",
-            name: "Localização",
+           href: "/a-pousada",
+            name: "A pousada",
         },
     ]
 
@@ -65,7 +65,7 @@ const Footer = () => {
 
     return (
        <footer className="bg-[#899D82] py-[50px]">
-    <Container className="flex flex-col md:flex-row">
+    <Container className="flex flex-col md:flex-row p-5 md:p-[0]">
         {/* Logo Section - agora fica acima em mobile */}
         <div className=" md:border-r-2 md:border-b-0 border-[#FDFBFE] w-full md:w-[200px] pb-5 md:pb-0 md:pr-5 md:mr-[100px] flex justify-center md:justify-start md:items-center mb-5 md:mb-0">
             <Logo className="h-[80px] md:h-[100px]" />

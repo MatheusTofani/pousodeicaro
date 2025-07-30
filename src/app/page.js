@@ -1,3 +1,4 @@
+// app/page.js (ou app/page.jsx)
 import Whatsapp from "@/components/Whatsapp";
 import About from "@/containers/About";
 import Acomodacoes from "@/containers/Acomodacoes";
@@ -9,22 +10,25 @@ import Hero from "@/containers/Hero";
 import Map from "@/containers/Map";
 import Passeios from "@/containers/Passeios";
 import Star from "@/containers/star";
+import ClientLoader from "@/components/ClientLoader";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden">
-      <Header />
-      <Hero />
-      <Diferenciais />
-      <About />
-      <Acomodacoes />
-      <Star />
-      <Passeios />
-      <Map />
-      <Faq />
-      <Footer />
-<Whatsapp />
-
-    </div>
+    <>
+      <ClientLoader />
+      <div className="overflow-hidden">
+        <Header />
+        <Hero />
+        <Diferenciais />
+        <About />
+        <Acomodacoes />
+        <Star />
+        <Passeios />
+        <Map />
+        <Faq />
+        <Footer />
+        <Whatsapp />
+      </div>
+    </>
   );
 }
