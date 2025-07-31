@@ -70,7 +70,7 @@ const SectionContato = () => {
 
                     <button
                         type="submit"
-                        className="mt-6 px-6 py-3 bg-[#20281D] text-white rounded-full hover:bg-[#2b3923] transition-colors duration-300 w-full md:w-auto self-start"
+                        className="mt-6 px-6 py-3 bg-[#899D82] text-[#FDFBFE] rounded-full cursor-pointer hover:bg-[#7a8f74] transition-colors font-medium w-full md:w-auto self-start"
                     >
                         Enviar mensagem
                     </button>

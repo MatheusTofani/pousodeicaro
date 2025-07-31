@@ -4,7 +4,7 @@ const Loader = () => {
       <img
         src="/load.gif"
         alt="Carregando..."
-        className="w-[120px] h-auto"
+        className="w-[300px] h-auto"
       />
     </div>
   );

@@ -79,8 +79,8 @@ export default function AcomodacaoDetalheView({ acomodacao }) {
                         </p>
                     </div>
 
-                    <a href="#" aria-label="Reservar agora">
-                        <button className="w-full bg-[#899D82] text-white py-3 rounded-full hover:bg-[#7a8f74] transition-colors font-medium">
+                    <a href="https://hotels.cloudbeds.com/pt-br/reservas/BF2NIc?currency=brl" aria-label="Reservar agora" target="blank">
+                        <button className="w-full bg-[#899D82] text-[#FDFBFE] py-3 rounded-full hover:bg-[#7a8f74] duration-300 cursor-pointer transition-colors font-medium">
                             Reservar agora
                         </button>
                     </a>

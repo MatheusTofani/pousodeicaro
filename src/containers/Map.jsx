@@ -58,7 +58,10 @@ const Map = () => {
             </Title>
 
             <p className="text-[#FDFBFE] mb-[30px] text-[16px] sm:text-[18px] md:text-[20px] leading-relaxed">
-              Localizado a apenas 150 metros do animado centro histórico de Paraty. Toda a tranquilidade e beleza que você procura a poucos metros de tudo.
+              A poucos passos do Centro Histórico de Paraty!
+Desfrute da tranquilidade do bairro Parque Imperial com o agito do centro.
+
+
             </p>
 
             {/* Endereço dentro de <address> para SEO */}

@@ -36,7 +36,7 @@ const AcomodacoesSection = () => {
                                 <p className="mb-5 leading-relaxed">{acomodacao.description}</p>
 
                                 <Link href={`/acomodacoes/${acomodacao.slug}`}>
-                                    <button className="bg-[#899D82] text-white px-6 py-3 rounded-full hover:bg-[#7a8f74] transition-colors">
+                                    <button  className="bg-[#899D82] text-[#FDFBFE] px-6 py-3 rounded-full hover:bg-[#7a8f74] duration-300 cursor-pointer transition-colors">
                                         Ver mais
                                     </button>
                                 </Link>

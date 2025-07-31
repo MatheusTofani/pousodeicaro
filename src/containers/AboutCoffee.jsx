@@ -6,7 +6,7 @@ const AboutCoffee = () => {
         <section
             aria-labelledby="about-title"
             role="region"
-            className="pt-[180px] pb-[100px] px-5 md:px-0"
+            className="pt-[130px] mb-[50px] px-5 md:px-0"
         >
             <Container className="flex flex-col md:flex-row items-center justify-between gap-8">
                 {/* Texto principal */}
@@ -28,7 +28,7 @@ const AboutCoffee = () => {
                 {/* Descrição */}
                 <div className="w-full md:w-[50%] text-[#20281D] text-[18px] md:text-[20px] leading-relaxed">
                     <p className="mb-4">
-                        A Pousada Pouso de Ícaro é uma pousada em Paraty que une conforto, sofisticação e atendimento de qualidade. Com localização privilegiada na praia de Paraty, oferecemos acomodações de luxo, serviços personalizados e uma experiência completa para quem busca tranquilidade e exclusividade.
+                        Comece seu dia com um delicioso café da manhã preparado com carinho. Servimos uma seleção irresistível de pães fresquinhos, tortas salgadas caseiras, frutas da estação, bolos cereais, frios e muito mais. Tudo servido em um ambiente acolhedor e iluminado, com variedade, qualidade e aquele toque caseiro que faz toda a diferença.
                     </p>
 
                 </div>

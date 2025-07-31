@@ -50,6 +50,7 @@ Adultos – R$110,00
 Garanta sua vaga agora!
 Faça sua reserva pelo WhatsApp com um sinal de 20% do valor total via PIX.`,
     slug: "aquamarina-2",
+    href:"https://wa.me/p/9936166683077272/552430380537",
     images: {
       image1: "/passeios/aquamarina/image1.png",
       image2: "/passeios/aquamarina/image2.png",
@@ -83,6 +84,7 @@ Aventura, cultura e natureza em um único passeio
 
 Reserve agora e venha viver essa experiência incrível!`,
     slug: "passeio-de-jipe",
+    href:"https://wa.me/p/9329397847137115/552430380537",
     images: {
       image1: "/passeios/jipe/image1.png",
       image2: "/passeios/jipe/image2.png",

@@ -10,8 +10,11 @@ export async function generateStaticParams() {
     return acomodacoes.map((a) => ({ slug: a.slug }));
 }
 
-export default function AcomodacaoPage({ params }) {
-    const acomodacao = acomodacoes.find((a) => a.slug === params.slug);
+export default async function AcomodacaoPage({ params }) {
+    const { slug } = params;
+
+    const acomodacao = acomodacoes.find((a) => a.slug === slug);
+
     if (!acomodacao) return notFound();
 
     return (
@@ -21,7 +24,7 @@ export default function AcomodacaoPage({ params }) {
             <AcomodacaoDetalheView acomodacao={acomodacao} />
             <Footer />
             <Whatsapp />
+        
         </div>
-
     );
 }

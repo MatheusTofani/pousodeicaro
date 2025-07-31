@@ -75,21 +75,8 @@ export default function PasseioDetail({ passeio }) {
           <h1 className="text-4xl font-bold mb-4">{passeio.name}</h1>
           <p className="text-lg leading-relaxed mb-4">{passeio.description}</p>
 
-          <div className="flex text-[30px] gap-5 mb-5">
-            {passeio.users && (
-              <p className="flex items-center gap-2 font-[500]">
-                <IoIosPeople className="text-[40px]" /> {passeio.users}
-              </p>
-            )}
-            {passeio.beds && (
-              <p className="flex items-center gap-2 font-[500]">
-                <FaBed className="text-[40px]" /> {passeio.beds}
-              </p>
-            )}
-          </div>
-
-          <a href="#" aria-label="Reservar agora">
-            <button className="w-full bg-[#899D82] text-white py-3 rounded-full hover:bg-[#7a8f74] transition-colors font-medium">
+          <a href={passeio.href} aria-label="Reservar agora" target="blank" >
+            <button className="w-full bg-[#899D82] text-[#FDFBFE] py-3 rounded-full cursor-pointer hover:bg-[#7a8f74] transition-colors font-medium">
               Reservar agora
             </button>
           </a>

@@ -66,7 +66,7 @@ const Header = () => {
                 rel="noopener noreferrer"
                 href="https://hotels.cloudbeds.com/pt-br/reservas/BF2NIc?currency=brl"
                 className={`inline-block px-6 py-3 rounded-full font-medium transition ${scrolled
-                  ? "text-[#FDFBFE] bg-[#899D82] hover:bg-[#809D82]"
+                  ? "text-[#FDFBFE] bg-[#899D82] hover:bg-[#7a8f74]"
                   : "text-[#20281D] bg-[#FDFBFE] hover:bg-gray-200"
                   }`}
               >

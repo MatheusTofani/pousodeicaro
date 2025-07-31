@@ -34,7 +34,7 @@ Smart TV, para entretenimento sem preocupações.
 Banheiro privativo com ducha quente, ideal para momentos de relaxamento.`,
     images: {
       image1: "/acomodacoes/suite-1-b/image1.jpg",
-      image2: "/acomodacoes/suite-1-b/image2.jpg",
+      image2: "/acomodacoes/suite-1-b/image2.png",
       image3: "/acomodacoes/suite-1-b/image3.jpg",
       image4: "/acomodacoes/suite-1-b/image4.jpg",
       image5: "/acomodacoes/suite-1-b/image5.jpg",
@@ -52,7 +52,7 @@ Frigobar, para maior comodidade durante sua estadia.
 Smart TV, para entretenimento sem preocupações.
 Banheiro privativo com ducha quente, ideal para momentos de relaxamento.`,
     images: {
-      image1: "/acomodacoes/suite-2-a/image1.jpg",
+      image1: "/acomodacoes/suite-2-a/image1.png",
       image2: "/acomodacoes/suite-2-a/image2.jpg",
       image3: "/acomodacoes/suite-2-a/image3.jpg",
       image4: "/acomodacoes/suite-2-a/image4.jpg",
@@ -186,7 +186,7 @@ Ideal para quem busca uma estadia aconchegante com praticidade e conforto!`,
 
     images: {
       image1: "/acomodacoes/suite-5/image1.jpg",
-      image2: "/acomodacoes/suite-5/image2.jpg",
+      image2: "/acomodacoes/suite-5/image2.png",
       image3: "/acomodacoes/suite-5/image3.jpg",
       image4: "/acomodacoes/suite-5/image4.jpg",
       image5: "/acomodacoes/suite-5/image5.jpg",
@@ -222,7 +222,6 @@ O equilíbrio perfeito entre conforto, funcionalidade e praticidade. Seja para u
       image2: "/acomodacoes/suite-6/image2.jpg",
       image3: "/acomodacoes/suite-6/image3.jpg",
       image4: "/acomodacoes/suite-6/image4.jpg",
-      image5: "/acomodacoes/suite-6/image5.jpg",
     },
     beds: 2,
     users: 3,
@@ -345,7 +344,7 @@ Conforto e praticidade para uma estadia inesquecível. Reserve agora e garanta s
  Ideal para quem busca conforto, comodidade e privacidade em um só lugar!`,
 
     images: {
-      image1: "/acomodacoes/suite-11-16/image1.jpg",
+      image1: "/acomodacoes/suite-11-16/image1.png",
       image2: "/acomodacoes/suite-11-16/image2.jpg",
       image3: "/acomodacoes/suite-11-16/image3.jpg",
       image4: "/acomodacoes/suite-11-16/image4.jpg",

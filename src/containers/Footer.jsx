@@ -24,7 +24,7 @@ const Footer = () => {
 
     const navs = [
         {
-            href: "/",
+            href: "/termos",
             name: "Termos",
         },
         {
