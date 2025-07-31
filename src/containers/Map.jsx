@@ -66,16 +66,6 @@ const Map = () => {
               R. Waldemar Mathias, 169 - Parque Imperial, Paraty - RJ, 23970-000
             </address>
 
-            {/* Link para abrir Google Maps em nova aba */}
-            <a
-              href="https://goo.gl/maps/5wUrUuZK7Rzqsn9r9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-block text-[#FDFBFE] underline hover:text-[#899D82] transition"
-              aria-label="Abrir localização da pousada no Google Maps"
-            >
-              Ver no Google Maps
-            </a>
           </div>
         </Container>
       </section>

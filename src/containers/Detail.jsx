@@ -72,10 +72,10 @@ export default function AcomodacaoDetalheView({ acomodacao }) {
 
                     <div className="flex text-[30px] gap-5 mb-5">
                         <p className="flex items-center gap-2 font-[500]">
-                            <IoIosPeople className="text-[40px]" /> 3
+                            <IoIosPeople className="text-[40px]" /> {acomodacao.users}
                         </p>
                         <p className="flex items-center gap-2 font-[500]">
-                            <FaBed className="text-[40px]" /> 2
+                            <FaBed className="text-[40px]" /> {acomodacao.beds}
                         </p>
                     </div>
 

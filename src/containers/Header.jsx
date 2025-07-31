@@ -43,7 +43,7 @@ const Header = () => {
         }`}
     >
       <Container className="flex items-center justify-between h-[80px] transition-all p-5 md:p-0">
-        <Logo className={`h-[70px]`} />
+        <Logo className={`h-[60px]`} />
 
         {/* Menu Desktop */}
         <nav className="hidden md:block">
