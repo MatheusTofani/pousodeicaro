@@ -94,6 +94,9 @@ const Star = () => {
             </article>
           ))}
         </div>
+
+<a href="" className=" mt-[80px] inline-block px-6 py-4 rounded-full font-medium duration-300 transition text-[#FDFBFE] bg-[#899D82] hover:bg-[#7a8f74]">Ver outras avaliações </a>
+
       </Container>
     </section>
   );

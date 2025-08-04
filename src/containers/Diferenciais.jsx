@@ -7,15 +7,15 @@ import "../app/globals.css";
 
 const features = [
   { icon: FiCoffee, title: "CAFÉ DA MANHÃ" },
-  { icon: BiSolidCarGarage, title: "GARAGEM" },
+  { icon: BiSolidCarGarage, title: "ESTACIONAMENTO PRIVADO" },
   { icon: BiMedal, title: "MELHOR AVALIADO" },
   { icon: MdOutlinePool, title: "PISCINA" },
 ];
 
-const FeatureItem = ({ Icon, title, textSize = "text-[25px]", maxWidth = "max-w-[120px]" }) => (
+const FeatureItem = ({ Icon, title, textSize = "text-[20px]", maxWidth = "max-w-[120px]" }) => (
   <span className="flex items-center gap-3" role="listitem">
     <div
-      className="text-[#FDFBFE] bg-[#899D82] rounded-full p-5 text-[40px]"
+      className="text-[#FDFBFE] bg-[#899D82] rounded-full p-5 text-[35px]"
       aria-hidden="true"
     >
       <Icon />
@@ -25,7 +25,7 @@ const FeatureItem = ({ Icon, title, textSize = "text-[25px]", maxWidth = "max-w-
 );
 
 const Diferenciais = () => {
-  // Duplica os itens para o slider móvel
+
   const duplicatedFeatures = [...features, ...features];
 
   return (

@@ -66,7 +66,7 @@ export default function AcomodacaoDetalheView({ acomodacao }) {
                 {/* Conteúdo da acomodação */}
                 <div className="w-full md:w-[40%] mt-6 md:mt-0 flex flex-col">
                     <h1 className="text-4xl font-bold mb-4">{acomodacao.name}</h1>
-                    <p className="text-lg leading-relaxed mb-4">
+                    <p className="text-lg leading-relaxed  text-[17px] mb-4">
                         {acomodacao.description}
                     </p>
 
@@ -80,7 +80,7 @@ export default function AcomodacaoDetalheView({ acomodacao }) {
                     </div>
 
                     <a href="https://hotels.cloudbeds.com/pt-br/reservas/BF2NIc?currency=brl" aria-label="Reservar agora" target="blank">
-                        <button className="w-full bg-[#899D82] text-[#FDFBFE] py-3 rounded-full hover:bg-[#7a8f74] duration-300 cursor-pointer transition-colors font-medium">
+                        <button className="w-full bg-[#899D82] text-[#FDFBFE] py-4 text-[20px] rounded-full hover:bg-[#7a8f74] duration-300 cursor-pointer transition-colors font-medium">
                             Reservar agora
                         </button>
                     </a>

@@ -4,14 +4,10 @@ import dynamic from "next/dynamic";
 import Container from "@/components/Container";
 import Title from "@/components/Title";
 import acomodacoes from "@/data/acomodacoes";
-
-
-// Estilos do react-slick
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CardItem from "@/components/Card";
 
-// Importa o Slider com SSR desativado (Next.js)
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const Acomodacoes = () => {
@@ -49,6 +45,30 @@ const Acomodacoes = () => {
     ),
   };
 
+
+  const areas = [
+    {
+      name: "Suítes",
+      image: "/acomodacoes/suite-1-a/image1.jpg",
+      href: "/acomodacoes",
+    },
+    {
+      name: "Café da manhã",
+      image: "/cafe/image1.jpg",
+      href: "/cafe",
+    },
+    {
+      name: "Áreas Comuns",
+      image: "/pousada/image8.jpg",
+      href: "/cafe",
+    },
+    {
+      name: "Restaurantes",
+      image: "/cafe/image2.jpg",
+      href: "/cafe",
+    },
+  ]
+
   return (
     <section className="py-[60px] md:py-[80px] bg-[#899D82] relative">
       <Container>
@@ -56,12 +76,12 @@ const Acomodacoes = () => {
 
         <div className="px-2 md:px-4 pb-[60px] md:pb-16">
           <Slider {...settings}>
-            {acomodacoes.map((acomodacao, index) => (
+            {areas.map((area, index) => (
               <div key={index} className="px-2 py-4 md:py-6">
                 <CardItem
-                  title={acomodacao.name}
-                  image={acomodacao.images.image1}
-                  link={`/acomodacoes/${acomodacao.slug}`}
+                  title={area.name}
+                  image={area.image}
+                  link={area.href}
                   isLink={true}
                   priority={index === 0}
                 />
@@ -70,21 +90,6 @@ const Acomodacoes = () => {
           </Slider>
         </div>
       </Container>
-
-      {/* Estilos globais dos dots */}
-      <style jsx global>{`
-        .slick-dots li.slick-active div {
-          background-color: #fdfbfe !important;
-          opacity: 1 !important;
-        }
-
-        @media (max-width: 767px) {
-          .slick-prev,
-          .slick-next {
-            display: none !important;
-          }
-        }
-      `}</style>
     </section>
   );
 };

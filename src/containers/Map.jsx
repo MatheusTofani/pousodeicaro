@@ -65,7 +65,7 @@ Desfrute da tranquilidade do bairro Parque Imperial com o agito do centro.
             </p>
 
             {/* Endereço dentro de <address> para SEO */}
-            <address className="not-italic text-[#FDFBFE] text-[16px] sm:text-[18px] md:text-[22px] leading-relaxed font-bold">
+            <address className="not-italic text-[#FDFBFE] text-[16px] sm:text-[18px] md:text-[18px] leading-relaxed font-semibold">
               R. Waldemar Mathias, 169 - Parque Imperial, Paraty - RJ, 23970-000
             </address>
 

@@ -11,6 +11,7 @@ import Map from "@/containers/Map";
 import Passeios from "@/containers/Passeios";
 import Star from "@/containers/star";
 import ClientLoader from "@/components/ClientLoader";
+import Selo from "@/containers/Selo";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Passeios />
         <Map />
         <Faq />
+        <Selo />
         <Footer />
         <Whatsapp />
       </div>
