@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useEffect, useState } from "react";
@@ -7,15 +8,8 @@ const ClientLoader = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Quando toda a página e recursos carregarem (incluindo imagens)
-    const handleLoad = () => setLoading(false);
-
-    if (document.readyState === "complete") {
-      setLoading(false); // já carregado
-    } else {
-      window.addEventListener("load", handleLoad);
-      return () => window.removeEventListener("load", handleLoad);
-    }
+    const timeout = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timeout);
   }, []);
 
   if (loading) return <Loader />;
