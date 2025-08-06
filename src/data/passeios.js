@@ -104,6 +104,15 @@ Reserve agora e venha viver essa experiência incrível!`,
       image4: "/passeios/pedradamarcela/image4.png",
     },
   },
+   {
+    name: "",
+    description: ``,
+    slug: "pedra-da-marcela",
+    href:"",
+    images: {
+      image1: "/passeios/passeio.png",
+    },
+  },
 ]
 
 export default passeio;

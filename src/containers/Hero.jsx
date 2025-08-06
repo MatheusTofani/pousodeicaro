@@ -40,7 +40,7 @@ const Hero = () => {
 
         <a
           href="https://hotels.cloudbeds.com/pt-br/reservas/BF2NIc?currency=brl"
-          className="inline-block bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition"
+          className="inline-block bg-[#FDFBFE] text-[#20281D] px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition"
           aria-label="Faça sua reserva agora"
           target="_blank"
           rel="noopener noreferrer"

@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import Logo from "@/components/Logo";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaGoogle } from "react-icons/fa";
 import { IoMdMail, IoMdPin } from "react-icons/io";
 
 
@@ -57,9 +57,9 @@ const Footer = () => {
             label: "Siga no Instagram"
         },
         {
-            icon: <FaFacebook className=" text-[20px]" />,
-            href: "mail",
-            label: "Curta no Facebook"
+            icon: <FaGoogle className=" text-[20px]" />,
+            href: "https://www.google.com/travel/search?q=pouso%20de%20icaro&g2lb=4899568%2C4899570%2C4965990%2C4969803%2C72302247%2C72317059%2C72414906%2C72471280%2C72472051%2C72485658%2C72560029%2C72573224%2C72616120%2C72647020%2C72648289%2C72686036%2C72760082%2C72803964%2C72832976%2C72882230%2C72958624%2C72959983%2C72990341&hl=pt-BR&gl=br&cs=1&ssta=1&ts=CAEaRQonEiUyIzB4OWQ2ZGZmZTE5MTk1ODk6MHg3NGE3MTY2MWIxOTY4NzU4EhoSFAoHCOkPEAkYARIHCOkPEAkYAhgBMgIQAA&qs=CAEyE0Nnb0kySTdhakp2TXhkTjBFQUU4AkIJCViHlrFhFqd0QgkJWIeWsWEWp3Q&ap=ugEGcHJpY2Vz&ved=0CAAQ5JsGahcKEwiIhL-n_PaOAxUAAAAAHQAAAAAQBA&ictx=111",
+            label: "Veja no google"
         },
     ]
 

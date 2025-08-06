@@ -10,6 +10,17 @@ export async function generateStaticParams() {
     return acomodacoes.map((a) => ({ slug: a.slug }));
 }
 
+export async function generateMetadata({ params }) {
+    const acomodacao = acomodacoes.find((a) => a.slug === params.slug);
+
+    if (!acomodacao) return {};
+
+    return {
+        title: `${acomodacao.name} | Pouso de Ícaro`,
+        description: acomodacao.description?.substring(0, 150) || "Conheça nossa acomodação exclusiva.",
+    };
+}
+
 export default async function AcomodacaoPage({ params }) {
     const { slug } = params;
 
@@ -24,7 +35,7 @@ export default async function AcomodacaoPage({ params }) {
             <AcomodacaoDetalheView acomodacao={acomodacao} />
             <Footer />
             <Whatsapp />
-        
+
         </div>
     );
 }

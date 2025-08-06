@@ -1,80 +1,66 @@
 import Container from "@/components/Container";
 import Title from "@/components/Title";
-
+import { FaWhatsapp } from "react-icons/fa6";
+import { CgMail } from "react-icons/cg";
+import { BsTelephoneOutboundFill } from "react-icons/bs";
 const SectionContato = () => {
+
+    const items = [
+        {
+            icon: <BsTelephoneOutboundFill className="text-[40px]" />,
+            href: "tel:+552430380537",
+            buttonText: "Nos ligue",
+            name: "Nos ligue pelo telefone/celular",
+        },
+        {
+            icon: <FaWhatsapp className="text-[40px]" />,
+            href: "https://wa.me/552430380537",
+            buttonText: "Enviar mensagem",
+            name: "Nos chame pelo Whatsapp",
+        },
+        {
+            icon: <CgMail className="text-[40px]" />,
+            href: "mailto:junior@pousodeicaro.com",
+            buttonText: "Enviar e-mail",
+            name: "Nos mande um e-mail",
+        },
+    ];
+
+
     return (
-        <section className="pt-[180px] pb-[80px] bg-[#F8F8F8]">
-            <Container className={"p-5 md:p-[0]"}>
-                <Title className="text-center mb-10">Fale Conosco</Title>
+        <section
+            className="pt-[180px] pb-[80px] bg-[#FDFBFE]"
+            id="contato"
+            aria-label="Seção de contato"
+        >
+            <Title as="h2" className="text-center mb-10">
+                Fale Conosco
+            </Title>
 
-                <form className="flex flex-col gap-8 w-full">
-                    {/* Nome */}
-                    <div className="flex flex-col w-full">
-                        <label htmlFor="name" className="mb-1 text-[#20281D] font-medium">
-                            Nome
-                        </label>
-                        <input
-                            id="name"
-                            name="name"
-                            type="text"
-                            placeholder="Digite seu nome"
-                            className="border-b-2 border-[#20281D] focus:border-[#899D82] focus:outline-none py-2 px-1 bg-transparent placeholder:text-[#20281D] w-full"
-                            required
-                        />
-                    </div>
+            <Container className="p-5 md:p-0">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {items.map((item, index) => (
+                        <article
+                            key={index}
+                            className="bg-[#899D82] text-white rounded-2xl p-8 flex flex-col justify-between items-center text-center shadow-lg"
+                        >
+                            <div className="flex flex-col items-center gap-4">
+                                {item.icon}
+                                <p className="text-[20px] font-semibold">{item.name}</p>
+                            </div>
 
-                    {/* Telefone */}
-                    <div className="flex flex-col w-full">
-                        <label htmlFor="phone" className="mb-1 text-[#20281D] font-medium">
-                            Telefone
-                        </label>
-                        <input
-                            id="phone"
-                            name="phone"
-                            type="tel"
-                            placeholder="(00) 00000-0000"
-                            className="border-b-2 border-[#20281D] focus:border-[#899D82] focus:outline-none py-2 px-1 bg-transparent placeholder:text-[#20281D] w-full"
-                            required
-                        />
-                    </div>
-
-                    {/* Email */}
-                    <div className="flex flex-col w-full">
-                        <label htmlFor="email" className="mb-1 text-[#20281D] font-medium">
-                            E-mail
-                        </label>
-                        <input
-                            id="email"
-                            name="email"
-                            type="email"
-                            placeholder="Digite seu e-mail"
-                            className="border-b-2 border-[#20281D] focus:border-[#899D82] focus:outline-none py-2 px-1 bg-transparent placeholder:text-[#20281D] w-full"
-                            required
-                        />
-                    </div>
-
-                    {/* Mensagem */}
-                    <div className="flex flex-col w-full">
-                        <label htmlFor="message" className="mb-1 text-[#20281D] font-medium">
-                            Mensagem
-                        </label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="4"
-                            placeholder="Escreva sua mensagem"
-                            className="border-b-2 border-[#20281D] focus:border-[#899D82] focus:outline-none py-2 px-1 bg-transparent placeholder:text-[#20281D] w-full"
-                            required
-                        ></textarea>
-                    </div>
-
-                    <button
-                        type="submit"
-                        className="mt-6 px-6 py-3 bg-[#899D82] text-[#FDFBFE] rounded-full cursor-pointer hover:bg-[#7a8f74] transition-colors font-medium w-full md:w-auto self-start"
-                    >
-                        Enviar mensagem
-                    </button>
-                </form>
+                            <a
+                                href={item.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={item.buttonText}
+                                className="mt-6 inline-block bg-white text-[#20281D] px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition"
+                            >
+                                {item.buttonText}
+                            </a>
+                        </article>
+                    ))}
+                </div>
             </Container>
         </section>
     );

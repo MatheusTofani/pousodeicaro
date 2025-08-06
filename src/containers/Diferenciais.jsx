@@ -12,10 +12,10 @@ const features = [
   { icon: MdOutlinePool, title: "PISCINA" },
 ];
 
-const FeatureItem = ({ Icon, title, textSize = "text-[20px]", maxWidth = "max-w-[120px]" }) => (
+const FeatureItem = ({ Icon, title, textSize = "md:text-[20px] ", maxWidth = "max-w-[120px]" }) => (
   <span className="flex items-center gap-3" role="listitem">
     <div
-      className="text-[#FDFBFE] bg-[#899D82] rounded-full p-5 text-[35px]"
+      className="text-[#FDFBFE] bg-[#899D82] rounded-full p-5 text-[40px]"
       aria-hidden="true"
     >
       <Icon />
@@ -46,7 +46,7 @@ const Diferenciais = () => {
                 >
                   <feature.icon />
                 </div>
-                <p className="text-[20px] w-[120px] text-[#20281D] font-[300]">
+                <p className="text-[16px] w-[120px] text-[#20281D] font-[300]">
                   {feature.title}
                 </p>
               </div>

@@ -13,10 +13,39 @@ import Star from "@/containers/star";
 import ClientLoader from "@/components/ClientLoader";
 import Selo from "@/containers/Selo";
 import Seguranca from "@/containers/Seguranca";
-
+import Head from "next/head";
 export default function Home() {
   return (
     <>
+      {/* Schema LocalBusiness para SEO */}
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LodgingBusiness",
+              "name": "Pousada Pouso de Ícaro",
+              "image": "http://192.168.0.4:3000/logos/logo-png/logo.png",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "R. Waldemar Mathias, 169 - Parque Imperial",
+                "addressLocality": "Paraty",
+                "addressRegion": "RJ",
+                "postalCode": "23970-000",
+                "addressCountry": "BR"
+              },
+              "telephone": "+55-24-3038-0537",
+              "url": "https://www.pousodeicaro.com.br/",
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": -23.2228585,
+                "longitude": -44.720717
+              }
+            }),
+          }}
+        />
+      </Head>
       <ClientLoader />
       <div className="overflow-hidden">
         <Header />
