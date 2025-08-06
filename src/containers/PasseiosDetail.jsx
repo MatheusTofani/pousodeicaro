@@ -73,10 +73,10 @@ export default function PasseioDetail({ passeio }) {
         {/* Conteúdo do passeio */}
         <div className="w-full md:w-[40%] mt-6 md:mt-0 flex flex-col">
           <h1 className="text-4xl font-bold mb-4">{passeio.name}</h1>
-          <p className="text-lg leading-relaxed mb-4">{passeio.description}</p>
+          <p className="text-lg leading-relaxed  text-[17px] mb-4">{passeio.description}</p>
 
           <a href={passeio.href} aria-label="Reservar agora" target="blank" >
-            <button className="w-full bg-[#899D82] text-[#FDFBFE] py-3 rounded-full cursor-pointer hover:bg-[#7a8f74] transition-colors font-medium">
+            <button className="w-full bg-[#899D82] text-[#FDFBFE] py-4 text-[20px] rounded-full hover:bg-[#7a8f74] duration-300 cursor-pointer transition-colors font-medium">
               Reservar agora
             </button>
           </a>

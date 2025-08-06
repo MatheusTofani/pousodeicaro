@@ -3,8 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Container from "../components/Container";
-import { IoIosPeople } from "react-icons/io";
-import { FaBed } from "react-icons/fa";
+import { BsPeopleFill } from "react-icons/bs";
+import { FaBed } from "react-icons/fa6";
 
 export default function AcomodacaoDetalheView({ acomodacao }) {
     const images = Object.values(acomodacao.images);
@@ -70,12 +70,13 @@ export default function AcomodacaoDetalheView({ acomodacao }) {
                         {acomodacao.description}
                     </p>
 
-                    <div className="flex text-[30px] gap-5 mb-5">
-                        <p className="flex items-center gap-2 font-[500]">
-                            <IoIosPeople className="text-[40px]" /> {acomodacao.users}
+                    <div className="flex text-[30px] gap-5 mb-5 text-[#899D82] items-center justify-around">
+                        <p className="flex w-auto items-center gap-[20px] font-[500] justify-center ">
+                            <BsPeopleFill className="text-[25px]" /> <span className="text-[16px] ">Pessoas</span> {acomodacao.users}
                         </p>
-                        <p className="flex items-center gap-2 font-[500]">
-                            <FaBed className="text-[40px]" /> {acomodacao.beds}
+                        <span className="w-[1px] h-[30px] bg-[#899D82]"></span>
+                        <p className="w-auto flex items-center gap-[20px] font-[500] justify-center">
+                            <FaBed className="text-[25px]" /><span className="text-[16px]">Camas</span>  {acomodacao.beds}
                         </p>
                     </div>
 

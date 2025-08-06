@@ -12,6 +12,7 @@ import Passeios from "@/containers/Passeios";
 import Star from "@/containers/star";
 import ClientLoader from "@/components/ClientLoader";
 import Selo from "@/containers/Selo";
+import Seguranca from "@/containers/Seguranca";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <Acomodacoes />
         <Star />
         <Passeios />
+        <Seguranca />
         <Map />
         <Faq />
         <Selo />

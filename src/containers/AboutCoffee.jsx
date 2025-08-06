@@ -28,7 +28,11 @@ const AboutCoffee = () => {
                 {/* Descrição */}
                 <div className="w-full md:w-[50%] text-[#20281D] text-[18px] md:text-[20px] leading-relaxed">
                     <p className="mb-4">
-                        Comece seu dia com um delicioso café da manhã preparado com carinho. Servimos uma seleção irresistível de pães fresquinhos, tortas salgadas caseiras, frutas da estação, bolos cereais, frios e muito mais. Tudo servido em um ambiente acolhedor e iluminado, com variedade, qualidade e aquele toque caseiro que faz toda a diferença.
+                      Comece seu dia com um delicioso café da manhã preparado com carinho. Servimos um buffet completo com uma seleção irresistível de pães fresquinhos, tortas salgadas caseiras, frutas da estação, bolos, cereais, frios e muito mais.
+
+Além disso, oferecemos opções à la carte preparadas na hora, como ovos mexidos, tapiocas e outras delícias feitas especialmente para você.
+
+Tudo servido em um ambiente acolhedor e iluminado, com variedade, qualidade e aquele toque caseiro que faz toda a diferença.
                     </p>
 
                 </div>

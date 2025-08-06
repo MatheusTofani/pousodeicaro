@@ -22,3 +22,18 @@ body {
     animation: slideMobile 10s linear infinite;
   }
 }
+
+.slick-dots li.slick-active div {
+          background-color: #FDFBFE !important;
+          opacity: 1 !important;
+        }
+        .slick-dots {
+          position: absolute;
+          bottom: -30px;
+        }
+        
+        @media (max-width: 767px) {
+          .slick-prev, .slick-next {
+            display: none !important;
+          }
+        }

@@ -1,6 +1,6 @@
 const passeio = [
   {
-    name: "Aquamarina 2",
+    name: "Passeio de Escuna",
     description: `Viva a melhor experiência de passeio de escuna em Paraty!
 
 Embarque na Escuna Aquamarina II e descubra as paisagens paradisíacas da Baía de Paraty com todo o conforto e exclusividade.
@@ -90,6 +90,18 @@ Reserve agora e venha viver essa experiência incrível!`,
       image2: "/passeios/jipe/image2.png",
       image3: "/passeios/jipe/image3.png",
       image4: "/passeios/jipe/image4.png",
+    },
+  },
+   {
+    name: "Nascer do Sol na Pedra da Marcela",
+    description: `Experimente uma caminhada privada ao nascer do sol até a Pedra da Marcela em Paraty. Desfrute de uma caminhada panorâmica pela Mata Atlântica, testemunhe um nascer do sol de tirar o fôlego e tire fotos incríveis.`,
+    slug: "pedra-da-marcela",
+    href:"https://www.getyourguide.com/pt-br/paraty-l1845/paraty-caminhada-privada-ao-nascer-do-sol-na-pedra-da-marcela-com-servico-de-busca-t1040711/?ranking_uuid=1afbe9c8-43cf-45f7-8484-bb76ccc07206&visitor-id=WGZL1WNTARONTOP53124C0LCGURYHHOS&locale_autoredirect_optout=true",
+    images: {
+      image1: "/passeios/pedradamarcela/image1.png",
+      image2: "/passeios/pedradamarcela/image2.png",
+      image3: "/passeios/pedradamarcela/image3.png",
+      image4: "/passeios/pedradamarcela/image4.png",
     },
   },
 ]

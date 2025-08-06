@@ -64,15 +64,15 @@ const Acomodacoes = () => {
     },
     {
       name: "Restaurantes",
-      image: "/cafe/image2.jpg",
-      href: "/cafe",
+      image: "/restaurantes/quintaldavo.png",
+      href: "/restaurantes",
     },
   ]
 
   return (
-    <section className="py-[60px] md:py-[80px] bg-[#899D82] relative">
+    <section className="py-[60px]  md:py-[80px] bg-[#899D82] relative">
       <Container>
-        <Title variant="white">ACOMODAÇÕES</Title>
+        <Title variant="white">NOSSA POUSADA</Title>
 
         <div className="px-2 md:px-4 pb-[60px] md:pb-16">
           <Slider {...settings}>

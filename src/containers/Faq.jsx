@@ -39,7 +39,7 @@ const Faq = () => {
     );
 
     return (
-        <section className="py-[80px] p-5 md:p-[80px 0]">
+        <section className="py-[80px] p-5 md:p-[80px 0] md:mt-[80px]">
             <Container>
                 <Title variant="black" className="text-center mb-8">
                     PERGUNTAS FREQUENTES

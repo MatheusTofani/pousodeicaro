@@ -95,7 +95,7 @@ const Star = () => {
           ))}
         </div>
 
-<a href="" className=" mt-[80px] inline-block px-6 py-4 rounded-full font-medium duration-300 transition text-[#FDFBFE] bg-[#899D82] hover:bg-[#7a8f74]">Ver outras avaliações </a>
+<a target="blank" href="https://www.google.com/travel/search?q=Pouso%20de%20icaro&g2lb=4899568%2C4899570%2C4965990%2C4969803%2C72302247%2C72317059%2C72414906%2C72471280%2C72472051%2C72485658%2C72560029%2C72573224%2C72616120%2C72647020%2C72648289%2C72686036%2C72760082%2C72803964%2C72832976%2C72882230%2C72958624%2C72959983%2C72990341&hl=pt-BR&gl=br&cs=1&ssta=1&ts=CAEaRQonEiUyIzB4OWQ2ZGZmZTE5MTk1ODk6MHg3NGE3MTY2MWIxOTY4NzU4EhoSFAoHCOkPEAkYARIHCOkPEAkYAhgBMgIQAA&qs=CAEyE0Nnb0kySTdhakp2TXhkTjBFQUU4AkIJCViHlrFhFqd0QgkJWIeWsWEWp3Q&ap=ugEHcmV2aWV3cw&ictx=111&ved=0CAAQ5JsGahcKEwiQi66g5_SOAxUAAAAAHQAAAAAQBA" className=" mt-[80px] inline-block px-6 py-4 rounded-full font-medium duration-300 transition text-[#FDFBFE] bg-[#899D82] hover:bg-[#7a8f74]">Ver outras avaliações </a>
 
       </Container>
     </section>

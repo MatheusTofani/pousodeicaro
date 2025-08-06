@@ -27,7 +27,7 @@ const About = () => {
         {/* Descrição */}
         <div className="w-full md:w-[50%] text-[#20281D] text-[18px] md:text-[20px] leading-relaxed">
           <p className="mb-4">
-            A Pousada Pouso de Ícaro é uma pousada em Paraty que une conforto, sofisticação e atendimento de qualidade. Com localização privilegiada na praia de Paraty, oferecemos acomodações de luxo, serviços personalizados e uma experiência completa para quem busca tranquilidade e exclusividade.
+            A Pousada Pouso de Ícaro é uma pousada em Paraty que une conforto, sofisticação e atendimento de qualidade. Bem localizada a poucos passos do centro histórico, oferecemos acomodações completas, serviços personalizados e uma experiência completa para quem busca tranquilidade e exclusividade.
           </p>
 
         </div>

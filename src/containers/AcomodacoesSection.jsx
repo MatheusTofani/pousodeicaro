@@ -7,7 +7,7 @@ import Header from "./Header";
 
 const AcomodacoesSection = () => {
     return (
-        <section className="py-20 bg-[#FDFBFE] text-[#20281D]">
+        <section className="px-5 md:px-[0] py-20 bg-[#FDFBFE] text-[#20281D]">
             <Header />
             <Container className={"mt-[80px]"}>
                 <Title className={"mb-[80px]"}>
@@ -36,7 +36,7 @@ const AcomodacoesSection = () => {
                                 <p className="mb-5 leading-relaxed">{acomodacao.description}</p>
 
                                 <Link href={`/acomodacoes/${acomodacao.slug}`}>
-                                    <button  className="bg-[#899D82] text-[#FDFBFE] px-6 py-3 rounded-full hover:bg-[#7a8f74] duration-300 cursor-pointer transition-colors">
+                                    <button  className="w-full md:w-auto bg-[#899D82] text-[#FDFBFE] px-6 py-3 rounded-full hover:bg-[#7a8f74] duration-300 cursor-pointer transition-colors">
                                         Ver mais
                                     </button>
                                 </Link>
