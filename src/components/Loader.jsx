@@ -1,11 +1,9 @@
+import Load from "./svg";
+
 const Loader = () => {
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#FDFBFE]">
-      <img
-        src="/load.gif"
-        alt="Carregando..."
-        className="w-[300px] h-auto"
-      />
+    <Load />
     </div>
   );
 };

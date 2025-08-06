@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import Load from "@/components/svg";
 import Title from "@/components/Title";
 import { FaStar } from "react-icons/fa";
 

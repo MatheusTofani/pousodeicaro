@@ -3,7 +3,6 @@
 import dynamic from "next/dynamic";
 import Container from "@/components/Container";
 import Title from "@/components/Title";
-import acomodacoes from "@/data/acomodacoes";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CardItem from "@/components/Card";

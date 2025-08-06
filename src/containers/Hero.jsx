@@ -18,9 +18,9 @@ const Hero = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-[-2]"
         aria-hidden="true"
-        // loading="lazy" // vídeo autoplay pode ignorar isso, avaliar uso
+      // loading="lazy" // vídeo autoplay pode ignorar isso, avaliar uso
       >
-        <source src="/Hero.mp4" type="video/webm" />
+        <source src="/Hero.mp4" type="video/mp4" />
         Seu navegador não suporta vídeos.
       </video>
 

@@ -37,3 +37,21 @@ body {
             display: none !important;
           }
         }
+
+
+@keyframes fadeInColor {
+  0% {
+    fill: #899d820a;
+  }
+  50% {
+     fill: #899D82; 
+  }
+  100% {
+    fill: #899d820a;
+  }
+}
+
+.loader {
+  animation: fadeInColor 3s ease-in forwards infinite;
+  height: 300px;
+}
