@@ -16,7 +16,6 @@ const CardItem = ({ title, image, link = "#", isLink = true, priority = false })
 
         {/* Imagem */}
         {typeof image === "string" && image.startsWith("/") ? (
-          // SSR friendly: use Image para acomodacoes (Next Image otimiza local e remota)
           <Image
             src={image}
             alt={title}

@@ -11,14 +11,17 @@ const Footer = () => {
         {
             icon: <IoMdPin className="text-[30px]" />,
             name: "R. Waldemar Mathias, 169 - Parque Imperial, Paraty - RJ, 23970-000",
+            href: "https://maps.app.goo.gl/hVA1Ybn7EiMf5CDF6"
         },
         {
             icon: <BsFillTelephoneFill   />,
-            name: "+55 (24) 3038-0537"
+            name: "+55 (24) 3038-0537",
+            href:"tel:+552430380537"
         },
         {
             icon: <IoMdMail />,
-            name: "junior@pousodeicaro.com"
+            name: "junior@pousodeicaro.com",
+            href:"mailto:junior@pousodeicaro.com"
         },
     ]
 
@@ -78,10 +81,10 @@ const Footer = () => {
                 <h2 className="text-[#FDFBFE] text-[20px] font-bold mb-2">Pouso de Ícaro</h2>
                 {adress.map((ads, index) => (
                     
-                    <p key={index} className="flex items-center gap-2 text-[#FDFBFE] text-[16px] text-center md:text-left">
+                    <a href={ads.href} key={index} target="blank" className="flex items-center gap-2 text-[#FDFBFE] text-[16px] text-center md:text-left hover:underline">
                         {ads.icon} 
                         {ads.name}
-                        </p>
+                        </a>
                 ))}
             </div>
 

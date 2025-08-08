@@ -20,7 +20,7 @@ export const generateMetadata = () => {
                 "Veja as acomodações da Pousada Pouso de Ícaro e escolha o quarto ideal para sua estadia.",
             images: [
                 {
-                    url: "/images/acomodacoes.jpg", // ajuste conforme necessário
+                    url: "/images/acomodacoes.jpg", 
                     width: 1200,
                     height: 630,
                     alt: "Foto do quarto da pousada",

@@ -39,6 +39,7 @@ const SectionContato = () => {
 
             <Container className="p-5 md:p-0">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {/* Card */}
                     {items.map((item, index) => (
                         <article
                             key={index}

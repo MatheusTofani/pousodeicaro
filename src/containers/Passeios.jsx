@@ -102,7 +102,7 @@ const Passeios = () => {
                     title={tour.name}
                     image={tour.images.image1}
                     link={`/passeios/${tour.slug}`}
-                    isLink={true} // Corrigido para ser linkável
+                    isLink={true} 
                   />
                 </div>
               ))}

@@ -105,12 +105,18 @@ Reserve agora e venha viver essa experiência incrível!`,
     },
   },
    {
-    name: "",
-    description: ``,
-    slug: "pedra-da-marcela",
-    href:"",
+    name: "Saco de Mamanguá",
+    description: `Viva uma experiência inesquecível explorando um dos lugares mais paradisíacos de Paraty!
+O passeio inclui paradas nas belíssimas Praia do Engenho, Praia do Costa e Praia do Cruzeiro, com tempo para relaxar, nadar e aproveitar a natureza.
+Saída às 9h da manhã e duração aproximada de 5 horas de pura beleza e tranquilidade`,
+    slug: "saco-de-mamangua",
+    href:"https://wa.me/552430380537",
     images: {
-      image1: "/passeios/passeio.png",
+      image1: "/passeios/mamangua/image1.jpg",
+       image2: "/passeios/mamangua/image1.jpg",
+        image3: "/passeios/mamangua/image3.jpg",
+         image4: "/passeios/mamangua/image4.jpg",
+          image5: "/passeios/mamangua/image5.jpg",
     },
   },
 ]

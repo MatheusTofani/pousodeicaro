@@ -41,7 +41,7 @@ export async function generateStaticParams() {
 }
 
 export default async function PasseioPage({ params }) {
-    const { slug } = await params;  // <== aqui está a correção
+    const { slug } = await params;  
 
     const passeio = passeioData.find((p) => p.slug === slug);
     if (!passeio) return notFound();

@@ -10,7 +10,7 @@ const LazyMap = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); // para não observar novamente
+          observer.disconnect(); 
         }
       },
       {

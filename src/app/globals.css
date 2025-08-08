@@ -19,7 +19,7 @@ body {
 
 @media (max-width: 767px) {
   .animate-slideMobile {
-    animation: slideMobile 10s linear infinite;
+    animation: slideMobile 15s linear infinite;
   }
 }
 

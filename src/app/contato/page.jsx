@@ -24,7 +24,7 @@ export const generateMetadata = () => {
                 "Fale com a equipe da Pousada Pouso de Ícaro em Paraty. Estamos à disposição para esclarecer dúvidas e ajudar na sua reserva.",
             images: [
                 {
-                    url: "/images/contato.jpg", // ajuste conforme necessário
+                    url: "/images/contato.jpg", 
                     width: 1200,
                     height: 630,
                     alt: "Imagem da pousada em Paraty",

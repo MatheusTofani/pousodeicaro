@@ -18,7 +18,6 @@ const Map = () => {
           </div>
 
           <div className="flex flex-col justify-center items-center text-center w-full md:w-[50%]">
-            {/* Use um h2 para melhor SEO e estruturação */}
             <Title variant="white" as="h2">
               ONDE ESTAMOS
             </Title>
@@ -30,7 +29,6 @@ Desfrute da tranquilidade do bairro Parque Imperial com o agito do centro.
 
             </p>
 
-            {/* Endereço dentro de <address> para SEO */}
             <address className="not-italic text-[#FDFBFE] text-[16px] sm:text-[18px] md:text-[18px] leading-relaxed font-semibold">
               R. Waldemar Mathias, 169 - Parque Imperial, Paraty - RJ, 23970-000
             </address>
