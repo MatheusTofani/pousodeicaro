@@ -7,8 +7,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Pouso de Icaro",
-  description: "Hospedagem na natureza com conforto e tranquilidade.",
+   title: "Pouso de Ícaro | Pousada em Paraty com Conforto",
+  description:"Pouso de Ícaro: hospedagem em Paraty cercada pela natureza, com conforto, tranquilidade e fácil acesso às praias e ao centro histórico.",
   icons: {
     icon: "/logo.png",
   },
