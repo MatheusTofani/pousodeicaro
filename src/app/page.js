@@ -45,6 +45,7 @@ export default function Home() {
             }),
           }}
         />
+        <meta name="google-site-verification" content="9FSbjWxMBJ_4_iRAZNKxL-Z2PGwdrRO9Zzh8KDwKDys" />
       </Head>
       <ClientLoader />
       <div className="overflow-hidden">
