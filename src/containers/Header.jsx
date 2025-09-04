@@ -18,7 +18,7 @@ const Header = () => {
     { name: "A Pousada", href: "/a-pousada" },
     { name: "Acomodações", href: "/acomodacoes" },
     { name: "Café", href: "/cafe" },
-    { name: "Contato", href: "/contato" },
+    { name: "Contato", href: "/contatos" },
   ];
 
   useEffect(() => {
