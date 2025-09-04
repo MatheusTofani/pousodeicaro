@@ -17,9 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-       <Head>
+       <head>
         <meta property="og:image" content="https://www.pousodeicaro.com.br/pousada/image1.jpg" />
-      </Head>
+      </head>
       <body className={`${montserrat.variable} antialiased`}>
         {children}
       </body>
